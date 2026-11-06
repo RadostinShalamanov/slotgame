@@ -38,7 +38,7 @@ namespace SlotGame.Helpers
                 TotalSpins = numberOfSpins
             };
 
-            Stopwatch stopwatch = Stopwatch.StartNew();
+
 
             for (int i = 0; i < numberOfSpins; i++)
             {
@@ -56,8 +56,7 @@ namespace SlotGame.Helpers
                 }
             }
 
-            stopwatch.Stop();
-            result.ExecutionTime = stopwatch.Elapsed;
+            
 
             return result;
 

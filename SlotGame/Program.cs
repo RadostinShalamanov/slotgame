@@ -30,12 +30,12 @@ namespace SlotGame
 
             Console.WriteLine("\n~~~~~ Simulation Results ~~~~~");
 
-            Console.WriteLine($"TOtal Spins: {simulationResult.TotalSpins:N0}");
-            Console.WriteLine($"TOtal Bets: {simulationResult.TotalBets:N0}");
-            Console.WriteLine($"TOtal Wins: {simulationResult.TotalWins:N0}");
-            Console.WriteLine($"Winning Spins: {simulationResult.WinningSpins:N0}");
-            Console.WriteLine($"Profit/loss: {simulationResult.NetProfit:N0}");
-            Console.WriteLine($"RTP: {simulationResult.RTP():F2}%");
+            Console.WriteLine($"Total Spins:     {simulationResult.TotalSpins:N0}");
+            Console.WriteLine($"Total Bets:      {simulationResult.TotalBets:N0}");
+            Console.WriteLine($"Total Wins:      {simulationResult.TotalWins:N0}");
+            Console.WriteLine($"Winning Spins:   {simulationResult.WinningSpins:N0}");
+            Console.WriteLine($"Profit/loss:     {simulationResult.NetProfit:N0}");
+            Console.WriteLine($"RTP:             {simulationResult.RTP():F2}%");
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }

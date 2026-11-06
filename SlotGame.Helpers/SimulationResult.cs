@@ -27,16 +27,6 @@ namespace SlotGame.Helpers
             return (double) TotalWins / TotalBets * 100;
         }
 
-        public TimeSpan ExecutionTime { get; set; }
-
-        public double SpinsPerSecond()
-        {
-            if (ExecutionTime.TotalSeconds == 0)
-            {
-                return 0;
-            }
-
-            return TotalSpins / ExecutionTime.TotalSeconds;
-        }
+      
     }
 }
