@@ -18,11 +18,25 @@ namespace SlotGame.Helpers
 
         public long NetProfit => TotalWins - TotalBets;
 
-        public double RPT => TotalBets == 0 ? 0 : (double)TotalSpins / TotalBets * 100;
+        public double RTP()
+        {
+            if (TotalBets == 0)
+            {
+                return 0;
+            }
+            return (double) TotalWins / TotalBets * 100;
+        }
 
         public TimeSpan ExecutionTime { get; set; }
 
-        public double SpinsPerSecond =>
-               ExecutionTime.TotalSeconds == 0 ? 0 : TotalSpins / ExecutionTime.TotalSeconds;
+        public double SpinsPerSecond()
+        {
+            if (ExecutionTime.TotalSeconds == 0)
+            {
+                return 0;
+            }
+
+            return TotalSpins / ExecutionTime.TotalSeconds;
+        }
     }
 }

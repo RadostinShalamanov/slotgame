@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Project Path="SlotGame.Domain/SlotGame.Domain.csproj" />
+  <Project Path="SlotGame.Helpers/SlotGame.Helpers.csproj" />
+  <Project Path="SlotGame/SlotGame.csproj" />
+</Solution>

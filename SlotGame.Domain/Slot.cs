@@ -59,10 +59,13 @@ namespace SlotGame.Domain
                     matchCount++;
                 }
 
-
+              
                 if (matchCount >= 3)
                 {
-                    int payout = _configuration.Symbols[firstSymbol][matchCount - 1];
+                    int[] symbolPayouts = _configuration.Symbols[firstSymbol];
+
+                    int payoutIndex = matchCount - 1;
+                    int payout = symbolPayouts[payoutIndex];
 
                     if (payout > 0)
                     {
